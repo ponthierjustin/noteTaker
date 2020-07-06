@@ -9,6 +9,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
+require("./Develop/routes/html")(app);
+
 app.listen(PORT, function(){
     console.log("http://localhost:" + PORT);
 });
