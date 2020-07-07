@@ -14,4 +14,9 @@ module.exports = function (app) {
     });
     res.json(notesData);
   });
+
+  app.delete("/api/notes/title", function(req, res){
+    let chosen = req.params.notesData;
+  });
+
 };
