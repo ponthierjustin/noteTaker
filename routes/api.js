@@ -8,10 +8,15 @@ module.exports = function (app) {
 
   app.post("/api/notes", function (req, res) {
     notesData.push(req.body);
-    fs.writeFile(__dirname + "/../db/db.json", JSON.stringify(notesData), "utf-8", (err) => {
-      if (err) throw err;
-      console.log("successful");
-    });
+    fs.writeFile(
+      __dirname + "/../db/db.json",
+      JSON.stringify(notesData),
+      "utf-8",
+      (err) => {
+        if (err) throw err;
+        console.log("successful");
+      }
+    );
     res.json(notesData);
   });
 };
