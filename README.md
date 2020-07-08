@@ -26,9 +26,6 @@
 
   ## Usage
 
-  ![gif](assests/video.gif)
-
-
   Allows users to write notes and keep up with their list, thoughts, and other notable moments.
 
   ## Contributions
@@ -38,7 +35,7 @@
   ## Tests
 
 
-  https://github.com/ponthierjustin/noteTaker
+   ![gif](assests/video.gif)
 
   ## License
   
